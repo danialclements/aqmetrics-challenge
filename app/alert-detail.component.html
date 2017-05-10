@@ -1,0 +1,45 @@
+<div ng-show='model.alert' class="alert-details">
+	<h3>{{model.alert.alert_name}}</h3>
+	<p>{{model.alert.alert_detail.alert_comment}}</p>
+	<hr>
+	<h4>Alert Details</h4>
+	<div class="row">
+		<div class="col-md-3">
+			<strong>ID</strong>
+			{{model.alert.alert_id}}
+		</div>
+		<div class="col-md-3">
+			<strong>Code</strong>
+			{{model.alert.alert_code}}
+		</div>
+		<div class="col-md-3">
+			<strong>Fund Name</strong>
+			{{model.alert.fund_name}}
+		</div>
+		<div class="col-md-3">
+			<strong>Status</strong>
+			{{model.alert.status}}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<strong>ISIN Code</strong>
+			{{model.alert.alert_detail.isin_code}}
+		</div>
+		<div class="col-md-3">
+			<strong>Alert Limit</strong>
+			{{model.alert.alert_detail.alert_limit}}
+		</div>
+		<div class="col-md-3">
+			<strong>Alert Value</strong>
+			{{model.alert.alert_detail.alert_value}}
+		</div>
+	</div>
+</div>
+
+<div ng-hide="model.alert">
+	<div class="alert alert-info" role="alert">
+		<span class="glyphicon glyphicon-info-sign"></span>
+		Click on an alert to view the details
+	</div>
+</div>

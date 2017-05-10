@@ -1,0 +1,11 @@
+<div class="container-fluid">
+	<h1>Alerts App</h1>
+	<div class="row">
+		<div class="col-md-4">
+			<alert-list alerts="model.alerts" on-alert-selected="model.onAlertSelected(alert)"></alert-list>
+		</div>
+		<div class="col-md-8">
+			<alert-detail alert="model.selectedAlert"></alert-detail>
+		</div>
+	</div>
+</div>

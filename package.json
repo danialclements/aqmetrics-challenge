@@ -1,0 +1,24 @@
+{
+  "name": "aqmetrics-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node_modules/.bin/bower install",
+    "prestart": "npm install",
+    "pretest": "npm install",
+    "test": "node_modules/.bin/karma start --single-run",
+    "start": "node_modules/.bin/live-server"
+  },
+  "author": "Danial Clements",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "jasmine": "^2.6.0",
+    "jasmine-core": "^2.6.1",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-jasmine": "^1.1.0",
+    "live-server": "^1.2.0"
+  }
+}

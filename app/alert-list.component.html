@@ -1,0 +1,27 @@
+<ul class="list-group">
+	<li class="list-group-item" 
+		ng-repeat="alert in model.alerts"
+		ng-click="model.onAlertClicked(alert)"
+		ng-class="model.getClassForAlert(alert)">
+		<div class="row">
+			<div class="col-md-8">
+				<h4>
+					{{alert.alert_name}}	
+				</h4>
+			</div>
+			<div class="col-md-4 text-right">
+				<small>{{alert.alert_timestamp}}</small>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<span class="subtle">ID</span>
+				{{alert.alert_id}}
+			</div>
+			<div class="col-md-6 text-right">
+				<span class="subtle">Code</span>
+				{{alert.alert_code}}
+			</div>
+		</div>
+	</li>
+</ul>
